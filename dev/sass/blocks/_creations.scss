@@ -1,0 +1,88 @@
+@import "../config/colors";
+.container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .ourCreations{
+    
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h2{
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 2em;
+        }
+        & button{
+            border: 1px solid $VeryDarkGray;
+            text-transform: uppercase;
+            background: none;
+            padding: .5rem 2rem;
+            font-family: 'Alata', sans-serif;
+            letter-spacing: 2px;
+        }
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        & article.card{
+            height: 100%;
+            width: 100%;
+             .card__image{
+                width: 100%;
+                height: 450px;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                color: $White;
+                position: relative;
+                &1{
+                    background-image: url("/dev/images/desktop/image-deep-earth.jpg");
+                }
+                &2{
+                    background-image: url("/dev/images/desktop/image-night-arcade.jpg");
+                }
+                &3{
+                    background-image: url("/dev/images/desktop/image-soccer-team.jpg");
+                }
+                &4{
+                    background-image: url("/dev/images/desktop/image-grid.jpg");
+                }
+                &5{
+                    background-image: url("/dev/images/desktop/image-from-above.jpg");
+                }
+                &6{
+                    background-image: url("/dev/images/desktop/image-pocket-borealis.jpg");
+                }
+                &7{
+                    background-image: url("/dev/images/desktop/image-curiosity.jpg");
+                }
+                &8{
+                    background-image: url("/dev/images/desktop/image-fisheye.jpg");
+                }
+                & h3{ 
+                    background: rgb(0,0,0);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.055) 0%, rgb(0, 0, 0) 70%); 
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 21px;
+                    position: absolute;
+                    width: calc(100% - 4em);
+                    bottom: -21px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0 2em;
+                }
+            }
+            
+        }
+            
+    }
+}

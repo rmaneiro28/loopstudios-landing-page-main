@@ -1,0 +1,31 @@
+@import "../config/colors";
+
+.footer{
+    margin-top: 100px;
+    background: $Black;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .container{
+        width: 80%;
+        margin: auto;
+        & .footer__header-right img{
+            margin: 0 10px;
+        }
+        & .footer__header,
+        & .footer__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        & a{
+            text-decoration: none;
+            color: $White;
+        }
+        & p{
+            color: $DarkGray;
+        }
+    }
+}
